@@ -1,0 +1,335 @@
+body {
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+
+}
+
+
+.boton {
+
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 30px;
+
+
+
+
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.imege {
+    width: 150px;
+
+}
+
+header {
+    text-align: center;
+    background-color: rgb(235, 28, 28);
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.botones:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+.sofa {
+    text-align: center;
+    font-size: 50px;
+    height: 400px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(137, 63, 63);
+}
+
+.jost {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.bed {
+    font-size: 20px;
+
+}
+
+.percent {
+    text-decoration-line: line-through;
+    text-align: center;
+}
+
+.sen {
+    text-align: center;
+}
+
+.bying {
+    text-decoration: none;
+    margin-top: 20px;
+
+}
+
+.card {
+    border: 2px solid lightblue;
+    width: 260px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(rgb(189, 109, 109), rgb(255, 254, 254));
+
+}
+
+
+
+
+.card-img {
+    border: 2px double lightblue;
+
+
+
+}
+
+h4 {
+    text-align: center;
+    font-size: 40px;
+
+
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #66ff66;
+    color: ghostwhite;
+}
+
+button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+button:hover span {
+    color: black;
+}
+
+button::before,
+button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+button::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+
+
+.footer {
+    
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Truculenta', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+    color: #6e6e6e;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+</style>
+
+
+<style>
+  .buy-btn {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9900, #ff6600);
+    border: none;
+    border-radius: 50px;
+    padding: 12px 24px;
+    color: #fff;
+    font-family: 'Truculenta', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    margin-left:50%;
+    margin-top:80px;
+  }
+
+  .buy-btn svg {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .buy-btn:hover {
+    background: linear-gradient(135deg, #ff6600, #ff3300);
+    box-shadow: 0 0 15px rgba(255, 102, 0, 0.6);
+  }
+
+  .buy-btn:hover svg {
+    transform: translateX(5px);
+  }
+</style>
